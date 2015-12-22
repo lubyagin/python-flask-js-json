@@ -1,0 +1,38 @@
+
+<html>
+<head>
+<title>JSON result parse</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
+
+<style>
+.n {
+  font-size: 18pt;
+}
+</style>
+
+<script>
+function HTTPGET(URL) {
+  var xmlHttp = new XMLHttpRequest();
+  xmlHttp.open("GET",URL,false); // not synchronous request
+  xmlHttp.send(null);
+  return xmlHttp.responseText;
+}
+function Get() {
+  result = HTTPGET("/get/"+document.getElementById("n").value)
+  document.getElementById("result").innerHTML = JSON.parse(result)["n"];
+}
+</script>
+
+</head>
+
+<body>
+
+<h2>JSON get and parse</h2>
+<p>
+  <input type="text" autofocus="true" class="n" id="n" value="" onchange="Get()"/>
+  <input type="button" class="n" value="Get" onclick="Get()"/>
+</p>
+<p><span id="result"></span></p>
+
+</body>
+</html>
