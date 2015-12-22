@@ -1,1 +1,4 @@
 Простое приложение, возвращающее integer в JavaScript page.
+
+HTML+js page ---> Flask app (n)
+HTML+js page <--- Flask app (returns {"n": n })
