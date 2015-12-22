@@ -2,3 +2,5 @@
 
 HTML+js page ---> Flask app (n)
 HTML+js page <--- Flask app (returns {"n": n })
+
+# apt-get install python-flask
