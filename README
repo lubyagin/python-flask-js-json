@@ -1,6 +1,9 @@
-Простое приложение, возвращающее integer в JavaScript page.
+Простое приложение, возвращающее integer в HTML+JavaScript page (в виде JSON-строки).
 
 HTML+js page ---> Flask app (n)
 HTML+js page <--- Flask app (returns {"n": n })
 
+INSTALL
+
 # apt-get install python-flask
+% run.bat or ./run.sh
