@@ -1,5 +1,6 @@
 Простое приложение, возвращающее integer в HTML+JavaScript страницу в виде JSON-строки.
 
+Схема обмена данными
 HTML+js page ---> Flask app (n)
 HTML+js page <--- Flask app (returns {"n": n })
 
